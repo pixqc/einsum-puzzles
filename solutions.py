@@ -30,6 +30,7 @@ puzzle_29 = "...ij->...ji"
 puzzle_30 = "...ij,jk->...ik"
 
 
+# Puzzle #31
 def head(input_bld):
   q_blk = np.einsum("bld,dk->blk", input_bld, w_q_dk)
   k_blk = np.einsum("bld,dk->blk", input_bld, w_k_dk)
@@ -40,7 +41,7 @@ def head(input_bld):
   return out_blk
 
 
-# Puzzle #31 (Multi-head attention)
+# Puzzle #32
 def attention(input_bld):
   q_blhk = np.einsum("bld,dhk->blhk", input_bld, w_q_dhk)
   k_blhk = np.einsum("bld,dhk->blhk", input_bld, w_k_dhk)
