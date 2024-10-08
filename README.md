@@ -1,4 +1,4 @@
-pixqc/einsum-puzzles
+## Einsum puzzles
 
 Solve puzzles, learn einsum.
 
